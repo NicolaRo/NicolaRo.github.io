@@ -2,23 +2,9 @@
 @use "partials/footer.scss";
 @use "partials/body.scss";
 
-@import 'pages/CV-Style.scss';
-@import 'pages/Contact-Me-Style.scss';
-@import 'pages/Depyl-Project.scss';
-@import 'pages/Green-Earth_project.scss';
-@import 'pages/index-style.scss';
-
-$font-family: "Montserrat", sans-serif;
-$color-text: #a7a8a7;
-$color-primary: #801023;
-$color-background: #212121;
-$color-dark: #050505;
-$color-lightgray: #f2f2f2;
-$color-green: #25d366;
-$color-green-hover: #128c7e;
-$color-footer-hover: #373c37;
-$color-border: #60000d;
-$color-border-dark: #6d0000;
-$gray: #868585;
-
-
+@use './pages/cv.scss';
+@use './pages/contact-me.scss';
+@use './pages/depyl-project.scss';
+@use './pages/green-earth-project.scss';
+@use './pages/index.scss';
+@use './variables.scss';

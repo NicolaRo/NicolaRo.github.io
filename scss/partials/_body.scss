@@ -1,0 +1,16 @@
+@use '../variables' as *;
+
+* {
+    font-family: 'montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+    margin: 0;
+    background-color: $color-background;
+  }
+
+  a {
+    color: $color-primary;
+  }
