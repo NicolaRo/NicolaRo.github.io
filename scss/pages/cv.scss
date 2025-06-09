@@ -40,6 +40,7 @@ CV-hero-container {
     background-color: rgba(132, 134, 135, 0.467);
     display: flex;
     height: auto;
+    width: auto;
     flex-direction: column;
     justify-content: left;
     text-align: left;
@@ -73,9 +74,9 @@ CV-hero-container {
     padding: 1%;
   }
   .macbook-wrapper-container {
-    position: relative;
-    width: fit-content;
-    height: fit-content;
+    position: absolute;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
