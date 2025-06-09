@@ -1,6 +1,6 @@
-@use "partials/header.scss";
-@use "partials/footer.scss";
-@use "partials/body.scss";
+@use "./partials/header.scss";
+@use "./partials/footer.scss";
+@use "./partials/body.scss";
 
 @use './pages/cv.scss';
 @use './pages/contact-me.scss';
@@ -8,3 +8,15 @@
 @use './pages/green-earth-project.scss';
 @use './pages/index.scss';
 @use './variables.scss';
+
+    body {
+        background-color: #25D366;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-block;
+    }

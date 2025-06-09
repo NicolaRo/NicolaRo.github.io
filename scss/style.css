@@ -898,4 +898,16 @@ a {
 
 .logo-button:hover {
   color: #a7a8a7 !important;
+}
+
+body {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
