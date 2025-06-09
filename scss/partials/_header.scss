@@ -1,4 +1,4 @@
-$font-main: 'Montserrat', sans-serif;
+/*$font-main: 'Montserrat', sans-serif;
 $color-primary: #801023;
 $color-secondary: #a7a8a7;
 $color-dark: #050505;
@@ -9,9 +9,11 @@ $color-whatsapp: #25D366;
 $color-whatsapp-hover: #128C7E;
 $color-border: #6d0000;
 $color-gray: #808080;
-$color-gray-light: gray;
+$color-gray-light: gray;*/
 
+@use '../variables' as *;
 
+// Header styles
 .header {
   background-color: $color-dark;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
@@ -65,7 +67,7 @@ $color-gray-light: gray;
     cursor: pointer;
 
     .nav-icon {
-      background-color: $color-gray;
+      background-color: $color-hover;
       display: block;
       width: 18px;
       height: 2px;
@@ -74,7 +76,7 @@ $color-gray-light: gray;
 
       &::before,
       &::after {
-        background-color: $color-gray-light;
+        background-color: $color-lightgray;
         content: "";
         display: block;
         height: 100%;
