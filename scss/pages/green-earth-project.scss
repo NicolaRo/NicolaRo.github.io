@@ -1,3 +1,6 @@
+@use '../variables' as *;
+
+/*
 * {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -159,7 +162,7 @@
     text-align: center;
     width: 100%;
     height: 100%;
-  }
+  }*/
   .CV-hero-master {
       background-color: rgba(132, 134, 135, 0.467);
       display:flex;
