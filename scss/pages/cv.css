@@ -1,84 +1,89 @@
-CV-hero-container {
-  padding: 1%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: auto;
-  border-radius: 5px;
-}
-
-.wrap-education-hero {
-  width: 100%;
-  height: auto;
-  margin-top: 200%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: flex-start;
-  text-align: left;
-  transition: transform 0.5s;
-  color: #a7a8a7;
-  font-size: 30px;
-}
-
 .CV-Page-title {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: left;
   position: relative;
   width: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 10%;
+  text-align: flex-start;
+}
+
+.hero-img-container {
+  position: relative;
+  width: 100%;
   height: auto;
-  margin-top: 1%;
-  text-align: left;
+  display: flex;
+  flex-direction: row-reverse;
+  box-shadow: rgba(109, 0, 0, 0.684) 1 0 0;
+}
+.hero-img-container .hero-img {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  border: solid 5px #6d0000;
+  margin: 1%;
+}
+
+.page-header {
+  padding: 0;
+  margin: 0;
 }
 
 .CV-hero-master {
-  background-color: rgba(132, 134, 135, 0.467);
-  display: flex;
-  height: auto;
-  width: auto;
-  flex-direction: column;
-  justify-content: left;
-  text-align: left;
-  align-items: flex-start;
-  padding: 1%;
-  margin: 1%;
-  border-radius: 5px;
-}
-
-@media screen and (min-width: 650px) {
-  .CV-hero-master {
-    display: block;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin: 1%;
-    padding: 1%;
-    position: relative;
-    justify-content: left;
-    text-align: left;
-    transition: transform 0.5s;
-  }
-}
-.hero-logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: flex-start;
   position: relative;
-  width: 15%;
+  width: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.CV-hero-master .hero-logo {
+  width: 100px;
+  height: auto;
+}
+
+.Masters-description {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.start2Impact-container {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+}
+
+.btn-mastetr {
+  width: -moz-fit-content;
+  width: fit-content;
   height: auto;
   margin: 1%;
   padding: 1%;
+  background-color: #60000d;
+  color: #a7a8a7;
+  border: solid 2px #6d0000;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-mastetr:hover {
+  background-color: #6d0000;
+  color: #f2f2f2;
 }
 
+/* STYLE FOR THE MACBOOK WRAPPER */
 .macbook-wrapper-container {
-  position: absolute;
-  width: 100%;
-  height: auto;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -116,100 +121,7 @@ CV-hero-container {
   box-shadow: 0 0 10px #000;
 }
 
-.start2Impact-container {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: left;
-  position: relative;
-  margin: 1%;
-  padding: 5%;
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-@media screen and (min-width: 650px) {
-  .start2Impact-container {
-    flex-direction: column;
-    align-items: flex-start;
-    width: auto;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin: 1%;
-    padding: 1%;
-  }
-}
-.institute-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  position: relative;
-  width: 100%;
-  height: auto;
-  font-size: larger;
-}
-
-@media screen and (min-width: 650px) {
-  .institute-title {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
-    margin: 1%;
-    padding: 1%;
-    position: relative;
-    justify-content: center;
-    text-align: left;
-    transition: transform 0.5s;
-  }
-}
-.Master-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: auto;
-}
-
-.University-logo {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: auto;
-  margin: 1%;
-  padding: 1%;
-}
-
-@media screen and (max-width: 650px) {
-  .University-logo {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin: 1%;
-    padding: 1%;
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    transition: transform 0.5s;
-  }
-}
-.University-logo h2 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
+/* STYLE FOT THE SKILLS SECTION */
 .Skills-container {
   background-color: #373c37;
   padding: 1%;
@@ -355,6 +267,7 @@ CV-hero-container {
   width: calc(100% - 10px);
 }
 
+/* STYLE FOR PROJECT SECTION */
 .my-projects {
   display: flex;
   flex-direction: row;
