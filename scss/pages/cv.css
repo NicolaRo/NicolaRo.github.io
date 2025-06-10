@@ -7,8 +7,10 @@
   width: auto;
   height: -moz-fit-content;
   height: fit-content;
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: flex-start;
+  margin: 1%;
+  padding: 1%;
 }
 
 .hero-img-container {
@@ -19,17 +21,20 @@
   flex-direction: row-reverse;
   box-shadow: rgba(109, 0, 0, 0.684) 1 0 0;
 }
-.hero-img-container .hero-img {
-  border-radius: 100%;
-  width: 250px;
-  height: 250px;
-  border: solid 5px #6d0000;
+
+.CV-hero-img {
+  width: 30%;
+  height: auto;
+  box-shadow: rgba(109, 0, 0, 0.684) 1 0 0;
   margin: 1%;
+  padding: 1%;
+  border: solid 5px #6d0000;
 }
 
 .page-header {
-  padding: 0;
-  margin: 0;
+  background-image: url("/img/CV-img/Developers-illustration.png") !important;
+  padding: 1%;
+  margin: 1%;
 }
 
 .CV-hero-master {
@@ -40,9 +45,12 @@
   display: grid;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 1%;
+  margin: 1%;
 }
-.CV-hero-master .hero-logo {
-  width: 100px;
+
+.hero-logo-master {
+  width: 50px;
   height: auto;
 }
 

@@ -1,5 +1,7 @@
 @use '../variables' as *;
 
+
+
 .CV-Page-title {
   display: flex;
   flex-direction: column;
@@ -8,8 +10,10 @@
   position: relative;
   width: auto;
   height: fit-content;
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: flex-start;
+  margin:1%;
+  padding: 1%;
 }
 
 .hero-img-container {
@@ -18,21 +22,24 @@
   height: auto;
   display: flex;
   flex-direction: row-reverse;
-  box-shadow: rgba(109, 0, 0, 0.684) 1 0 0;
-  .hero-img {
-    border-radius:100%;
-    width: 250px;
-    height: 250px;
-    border: solid 5px #6d0000;
-    margin: 1%;
-    
-  }
+  box-shadow: rgba(109, 0, 0, 0.684) 1 0 0; 
 }
   
-.page-header {
-  padding:0;
-  margin: 0;
+.CV-hero-img {
+  width: 30%;
+  height: auto;
+  box-shadow: rgba(109, 0, 0, 0.684) 1 0 0;
+  margin: 1%;
+  padding: 1%;
+  border: solid 5px #6d0000;  
 }
+
+.page-header {
+  background-image: url('/img/CV-img/Developers-illustration.png') !important;
+  padding:1%;
+  margin: 1%;
+}
+
 .CV-hero-master {
   position: relative;
   width: auto;
@@ -40,10 +47,14 @@
   display: grid;
   flex-direction: column;
   justify-content: flex-start;
-  .hero-logo {
-    width: 100px;
-    height: auto;
-  }
+  padding: 1%;
+  margin: 1%;
+  
+}
+
+.hero-logo-master {
+  width: 50px;
+  height: auto;
 }
 
 .Masters-description {
