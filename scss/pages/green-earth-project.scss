@@ -1,128 +1,67 @@
 @use '../variables' as *;
 
-  .DEPYL-wrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: auto;
-      height: auto;
-      padding: 1%;
-    }
-    @media screen and (max-width: 650px) {
-      .DEPYL-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        padding: 1%;
-        margin: 1%;
-      }
-    }
-  
-    .DEPYL-Landingpage-scrolling-preview {
-      height: 100%;
-    }
-    .project-title {
-      font-family: "Arial", sans-serif;
-      font-size: 24px;
-      font-weight: bold;
-      color: #edeaea;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-      margin-bottom: 10px;
-    }
-    .University-logo {
-      width: auto;
-      height: auto;
-      margin-bottom: 20px;
-  }
-    .project-layout {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      text-align: left;
-      width: 100%;
-      height: auto;
-    }
-    .Project-description {
-      width: auto;
-      height: auto;
-      margin:1%;
-      padding: 1%;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      align-items: center;
-      ;
-      text-align: left;
-      font-size: 14px;
-      color: #edeaea;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    }
-    .University-logo h2 {
-      font-family:"Arial, Helvetica, sans-serif";
-      font-size: 20px;
-      font-weight: bold;
-      color: linearGradient(to right, #f3565b, #ffcc33);
-    }
-  
-  .DEPYL-Landingpage-scrolling-preview {
-      position: relative;
-      width: 65%;
-      height: auto;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-top: 1%;
-      padding: 1%;
-  }
-  .next-project-btn {
-      background-color: #006d35;
-      color: white;
-  
-      padding: 1%;
-      margin: 1%;
-      border-radius: 5px;
-      border: solid 1px #808080;
-      cursor: pointer;
-      text-decoration: none;
-      margin: 1%;
-      padding: 1%;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: var(--bs-body-line-height);
-      width:fit-content;
-  }
-  .next-project-btn:hover {
-      background-color: #00cd78;
-      color: white;
-      text-decoration: none;
-  } 
-  .previous-project-btn {
-      background-color: #004a6d;
-      color: white;
-      padding: 1%;
-      margin: 1%;
-      border-radius: 5px;
-      border: solid 1px #808080;
-      cursor: pointer;
-      text-decoration: none;
-      margin: 1%;
-      padding: 1%;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: var(--bs-body-line-height);
-      width:fit-content;
-  }
-  .previous-project-btn:hover {
-      background-color: #0070cd;
-      color: white;
-      text-decoration: none;
-  }
+.Project-description {
+  background-color: $gray;
+  width: 50%;
+  height: auto;
+  margin:1%;
+  padding: 1%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  font-size: 14px;
+  color: #edeaea;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.next-project-btn {
+  background-color: #006d35;
+  color: white;
+
+  padding: 1%;
+  margin: 1%;
+  border-radius: 5px;
+  border: solid 1px #808080;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 1%;
+  padding: 1%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: var(--bs-body-line-height);
+  width:fit-content;
+}
+
+.next-project-btn:hover {
+    background-color: #00cd78;
+    color: white;
+    text-decoration: none;
+} 
+
+.previous-project-btn {
+  background-color: #004a6d;
+  color: white;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 5px;
+  border: solid 1px #808080;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 1%;
+  padding: 1%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: var(--bs-body-line-height);
+  width:fit-content;
+}
+.previous-project-btn:hover {
+  background-color: #0070cd;
+  color: white;
+  text-decoration: none;
+}
   .go-back-btn {
       background-color: #6d0000;
       color: white;
