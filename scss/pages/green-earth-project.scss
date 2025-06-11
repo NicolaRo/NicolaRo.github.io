@@ -1,7 +1,7 @@
 @use '../variables' as *;
 
 .Project-description {
-  background-color: $gray;
+  background-color: $section-color-background;
   width: 50%;
   height: auto;
   margin:1%;
@@ -13,18 +13,16 @@
   align-items: center;
   text-align: left;
   font-size: 14px;
-  color: #edeaea;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  color: $color-text
 }
 
 .next-project-btn {
-  background-color: #006d35;
-  color: white;
-
+  background-color: $next-project-button-color;
+  color: $color-text;
   padding: 1%;
   margin: 1%;
   border-radius: 5px;
-  border: solid 1px #808080;
+  border: solid 1px $gray;
   cursor: pointer;
   text-decoration: none;
   margin: 1%;
@@ -36,18 +34,18 @@
 }
 
 .next-project-btn:hover {
-    background-color: #00cd78;
-    color: white;
+    background-color: $color-green-hover;
+    color: $color-text;
     text-decoration: none;
 } 
 
 .previous-project-btn {
-  background-color: #004a6d;
-  color: white;
+  background-color: $previus-project-button-color;
+  color: $color-text;
   padding: 1%;
   margin: 1%;
   border-radius: 5px;
-  border: solid 1px #808080;
+  border: solid 1px $color-border;
   cursor: pointer;
   text-decoration: none;
   margin: 1%;
