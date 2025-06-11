@@ -856,47 +856,7 @@ html {
 }
 
 .DEPYL-Landingpage-scrolling-preview {
-  width: 200%;
-  height: auto;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.project-title {
-  font-family: "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #edeaea;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  margin-bottom: 10px;
-}
-
-.University-logo {
-  width: auto;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.project-layout {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  width: 100%;
-  height: auto;
-}
-
-.University-logo h2 {
-  font-family: "Arial, Helvetica, sans-serif";
-  font-size: 20px;
-  font-weight: bold;
-  color: linearGradient(to right, #f3565b, #ffcc33);
-}
-
-.DEPYL-Landingpage-scrolling-preview {
   position: relative;
-  width: 65%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -922,7 +882,8 @@ html {
   width: -moz-fit-content;
   width: fit-content;
 }
-.next-project-btn :hover {
+
+.next-project-btn:hover {
   background-color: #00cd78;
   color: white;
   text-decoration: none;
@@ -1059,6 +1020,25 @@ html {
   color: #a7a8a7;
 }
 
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 1%;
+  padding: 1%;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 650px) {
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .next-project-btn {
   background-color: rgba(4, 192, 95, 0.6862745098);
   color: #f2f2f2;
@@ -1076,7 +1056,7 @@ html {
   width: -moz-fit-content;
   width: fit-content;
 }
-.next-project-btn :hover {
+.next-project-btn:hover {
   background-color: #128c7e;
   color: #a7a8a7;
   text-decoration: none;
