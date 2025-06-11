@@ -1,12 +1,12 @@
 .wrap-form-container {
-  max-width: 1000px;
-  margin: 2rem auto;
+  width: auto;
+  margin: 1%;
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
   background: #212121;
-  padding: 2rem;
-  border-radius: 12px;
+  padding: 1%;
+  border-radius: 5px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
 }
 .wrap-form-container .contact-me-hero-img {
@@ -23,10 +23,30 @@
   color: #a7a8a7;
 }
 
+.wrap-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1%;
+  padding: 1%;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-form {
+    width: 80%;
+  }
+}
 #contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin: 5%;
+  padding: 1%;
 }
 #contact-form .field {
   display: flex;
@@ -71,11 +91,14 @@
 }
 #contact-form .sumbit-btn button:hover {
   background-color: #373c37;
+  color: #a7a8a7;
+  border: solid 2px;
+  border-color: #a7a8a7;
 }
 
 .whatsapp-button {
   text-align: center;
-  margin-top: 3rem;
+  margin: 1%;
 }
 .whatsapp-button .logo-whatsapp {
   display: inline-flex;
