@@ -49,6 +49,39 @@
   margin-top: 1%;
   padding: 1%;
 }
+@media screen and (max-width: 650px) {
+  .DEPYL-Landingpage-scrolling-preview {
+    
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin:1%;
+    padding: 1%;
+  }
+  
+}
+
+.depyl-gif-overlay {
+  position: relative;
+  display: block; 
+  align-content: center;
+  left: 10%;
+  height: auto;
+  border-radius: 10px;
+  pointer-events: none;
+}
+@media screen and (max-width: 650px) {
+  .depyl-gif-overlay {
+    transform: scale (0.8);
+    display:block;
+    width: 70%;
+    height: auto;
+    margin: 1%;
+    padding: 1%;
+  }
+}
+
 .next-project-btn {
   background-color: $next-project-button-color;
   color: white;
@@ -103,6 +136,12 @@
   font-weight: 400;
   line-height: var(--bs-body-line-height);
   width:fit-content;
+  min-width: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 .go.back.btn:hover {
   background-color: #cd0000;
@@ -110,11 +149,4 @@
   text-decoration: none;
 }
 
-.depyl-gif-overlay {
-  position: relative;
-  display: block; 
-  left: 10%;
-  height: auto;
-  border-radius: 10px;
-  pointer-events: none;
-}
+
