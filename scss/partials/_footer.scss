@@ -1,0 +1,58 @@
+@use '../variables' as *;
+
+.footer {
+background-color: $color-lightgray;
+padding: 1%;
+margin: 0;
+text-align: center;
+display: flex;
+flex-direction: column;
+width: auto;
+margin-top: auto;
+color: #333;
+font-size: 14px;
+font-weight: 400;
+
+p {
+  font-size: 1rem;
+}
+}
+
+.footer-btn {
+  margin: 1%;
+  padding: 1%;
+}
+.footer-btn:hover {
+  background-color: $color-hover;
+  color: $color-secondary;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.footer-links {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 1%;
+padding: 1%;
+list-style: none;
+
+li {
+  margin: 0 10px;
+}
+}
+
+
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  margin: 1%;
+  padding: 1%;
+
+  &:hover {
+    background-color: $color-primary;
+    border-radius: 5px;
+    margin:1%;
+    padding: 1%;
+  }
+}

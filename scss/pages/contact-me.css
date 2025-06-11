@@ -1,0 +1,118 @@
+.wrap-form-container {
+  width: auto;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #212121;
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+.wrap-form-container .contact-me-hero-img {
+  flex-basis: 40%;
+  max-width: 350px;
+  border-radius: 8px;
+}
+
+.container-form {
+  flex-basis: 60%;
+}
+.container-form .form-text p {
+  margin-bottom: 1.5rem;
+  color: #a7a8a7;
+}
+
+.wrap-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1%;
+  padding: 1%;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-form {
+    width: 80%;
+  }
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 5%;
+  padding: 1%;
+}
+#contact-form .field {
+  display: flex;
+  flex-direction: column;
+}
+#contact-form .field label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+#contact-form .field input,
+#contact-form .field textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #60000d;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+#contact-form .field input:focus,
+#contact-form .field textarea:focus {
+  outline: none;
+  border-color: #801023;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+#contact-form .field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+#contact-form .sumbit-btn button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #a7a8a7;
+  color: #6d0000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#contact-form .sumbit-btn button:hover {
+  background-color: #373c37;
+  color: #a7a8a7;
+  border: solid 2px;
+  border-color: #a7a8a7;
+}
+
+.whatsapp-button {
+  text-align: center;
+  margin: 1%;
+}
+.whatsapp-button .logo-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #25d366;
+  color: #050505;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.whatsapp-button .logo-whatsapp:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}/*# sourceMappingURL=contact-me.css.map */

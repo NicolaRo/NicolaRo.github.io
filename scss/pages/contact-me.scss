@@ -1,0 +1,132 @@
+@use '../variables' as *;
+
+
+.wrap-form-container {
+  width:auto;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: $color-background;
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+
+  .contact-me-hero-img {
+    flex-basis: 40%;
+    max-width: 350px;
+    border-radius: 8px;
+  }
+}
+
+.container-form {
+  flex-basis: 60%;
+
+  .form-text p {
+    margin-bottom: 1.5rem;
+    color: $color-text;
+  }
+}
+.wrap-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1%;
+  padding: 1%;
+}
+@media screen and (max-width: 768px) {
+  .wrap-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-form {
+    width: 80%;
+  }
+
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin:5%;
+  padding: 1%;
+
+  .field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid $color-border;
+      border-radius: 6px;
+      font-family: $font-main;
+      font-size: 1rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+
+      &:focus {
+        outline: none;
+        border-color: $color-primary;
+        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+      }
+    }
+
+    textarea {
+      resize: vertical; // Permite al usuario cambiar la altura
+      min-height: 120px;
+    }
+  }
+
+  .sumbit-btn button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: $color-secondary;
+    color: $color-border-dark;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $color-hover;
+      color:$color-text;
+      border: solid 2px;
+      border-color: $color-secondary;
+    }
+  }
+}
+
+.whatsapp-button {
+  text-align: center;
+  margin: 1%;
+
+  .logo-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #25d366; // Color oficial de WhatsApp
+    color: $color-dark;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+  }
+}

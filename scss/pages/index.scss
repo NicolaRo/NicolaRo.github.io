@@ -1,0 +1,130 @@
+@use '../variables' as *;
+
+
+.wrap-title-portrait {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.portrait {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    
+}
+.title-container {
+    color:$color-text;
+    height: auto;
+    width: auto;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    Position:relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 5px;
+}
+.title-container h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    color: $color-text;
+}
+@media screen and (max-width: 510px) {
+    .title-container {
+    color:$color-text;
+    height: auto;
+    width: auto;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    Position:relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 5px;
+    }
+    
+}
+
+.bio-text {
+    height: auto;
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    display: block;
+    Position:relative;
+    justify-content: right;
+    align-items: end;
+    border-radius: 5px;
+}
+.hero-img {
+    width: 40%;
+    height: 40%;
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+    margin: 1%;
+    padding: 1%;
+    position: relative;    
+}
+
+.wrap-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .wrap-button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-img {
+        width: 60%;
+    }
+    .hero-text p {
+        font-size: 16px;
+    }
+    
+}
+
+.go-to-button {
+    background-color: #a7a8a7;
+    border: solid 1px #6d0000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #801023;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    width:fit-content;
+    display: block;
+    margin: 1%;
+    padding: 1%;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+.go-to-button:hover {
+    background-color: $color-hover;
+    color: $color-text !important;
+}
+.logo-button:hover {
+    color: $color-text!important;
+}

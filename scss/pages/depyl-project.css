@@ -1,0 +1,154 @@
+.DEPYL-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 1%;
+}
+
+@media screen and (max-width: 650px) {
+  .DEPYL-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    margin: 1%;
+  }
+}
+.DEPYL-Project-description {
+  background-color: #373c37;
+  width: auto;
+  height: auto;
+  margin-top: 10%;
+  padding: 1%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  font-size: 14px;
+  color: #a7a8a7;
+  border-radius: 5px;
+}
+
+.DEPYL-Landingpage-scrolling-preview {
+  position: relative;
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1%;
+  padding: 1%;
+}
+
+@media screen and (max-width: 650px) {
+  .DEPYL-Landingpage-scrolling-preview {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    padding: 1%;
+  }
+}
+.depyl-gif-overlay {
+  position: relative;
+  display: block;
+  align-content: center;
+  margin: 1%;
+  padding: 1%;
+  height: auto;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 650px) {
+  .depyl-gif-overlay {
+    transform: scale 0.8;
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 5px;
+  }
+}
+.next-project-btn {
+  background-color: rgba(4, 192, 95, 0.6862745098);
+  color: white;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 5px;
+  border: solid 1px #808080;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 1%;
+  padding: 1%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: var(--bs-body-line-height);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.next-project-btn:hover {
+  background-color: #00cd78;
+  color: white;
+  text-decoration: none;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 1%;
+  padding: 1%;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 650px) {
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.go-back-btn {
+  background-color: #6d0000;
+  color: white;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 5px;
+  border: solid 1px #808080;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 1%;
+  padding: 1%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: var(--bs-body-line-height);
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.go.back.btn:hover {
+  background-color: #cd0000;
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=depyl-project.css.map */
