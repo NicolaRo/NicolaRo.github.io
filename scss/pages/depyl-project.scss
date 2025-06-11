@@ -26,7 +26,7 @@
   background-color: $section-color-background;
   width: auto;
   height: auto;
-  margin-top:15%;
+  margin-top:10%;
   padding: 1%;
   list-style: none;
   display: flex;
@@ -41,7 +41,8 @@
 
 .DEPYL-Landingpage-scrolling-preview {
   position: relative;
-  height: auto;
+  height: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,6 +71,22 @@
   text-decoration: none;
 }
 
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 1%;
+  padding:1%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .go-back-btn {
   background-color: #6d0000;
@@ -86,98 +103,18 @@
   font-weight: 400;
   line-height: var(--bs-body-line-height);
   width:fit-content;
-    :hover {
-    background-color: #cd0000;
-    color: white;
-    text-decoration: none;
-  }
 }
-.macbook-wrapper {
-    position: absolute;
-    top:25%;
-    right:1%;
-    width: 50%;
+.go.back.btn:hover {
+  background-color: #cd0000;
+  color: white;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 650px) {
-  .macbook-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top: 1%;
-    padding: 1%;
-  }
-}
-  
-.macbook-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-  
 .depyl-gif-overlay {
   position: relative;
-  display: block;
-  top: 3%; 
+  display: block; 
   left: 10%;
-  width: 80%;
   height: auto;
   border-radius: 10px;
   pointer-events: none;
 }
-
-/*.gif-green-earth-overlay {
-  position: absolute;
-  left: 5%;
-  width: auto;
-  height: auto;
-  border-radius: 20px;
-  pointer-events: none;
-  width:355px; 
-  height:700px; 
-  top: 10%; 
-}
-*/
-
-.macbook-wrapper:hover .gif-overlay {
-    opacity: 1;
-    z-index: 4;
-    box-shadow: 0 0 10px #000;
-  }
-  @media screen and (max-width: 400px) {
-    .gif-overlay {
-      top: 17%;
-      left: 12%;
-      width: 76%;
-    }
-  }
-  .back-button {
-    background-color: #6d0000;
-    color: white;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    margin: 1%;
-    padding: 1%;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: var(--bs-body-line-height);
-    width:fit-content;
-  }
-  .back-button:hover {
-    background-color: #cd0000;
-    color: white;
-    text-decoration: none;
-  }
-  .back-button:active {
-    background-color: #cd0000;
-    color: white;
-    text-decoration: none;
-  }
