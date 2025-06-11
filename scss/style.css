@@ -940,9 +940,10 @@ html {
   position: relative;
   display: block;
   align-content: center;
-  left: 10%;
+  margin: 1%;
+  padding: 1%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   pointer-events: none;
 }
 
@@ -954,6 +955,7 @@ html {
     height: auto;
     margin: 1%;
     padding: 1%;
+    border-radius: 5px;
   }
 }
 .next-project-btn {
