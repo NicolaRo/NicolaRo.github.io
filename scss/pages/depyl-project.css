@@ -20,39 +20,11 @@
     margin: 1%;
   }
 }
-.DEPYL-Landingpage-scrolling-preview {
-  height: 100%;
-}
-
-.project-title {
-  font-family: "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #edeaea;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  margin-bottom: 10px;
-}
-
-.University-logo {
+.DEPYL-Project-description {
+  background-color: #373c37;
   width: auto;
   height: auto;
-  margin-bottom: 20px;
-}
-
-.project-layout {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  width: 100%;
-  height: auto;
-}
-
-.Project-description {
-  width: 50%;
-  height: auto;
-  margin: 1%;
+  margin-top: 15%;
   padding: 1%;
   list-style: none;
   display: flex;
@@ -61,20 +33,12 @@
   align-items: center;
   text-align: left;
   font-size: 14px;
-  color: #edeaea;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.University-logo h2 {
-  font-family: "Arial, Helvetica, sans-serif";
-  font-size: 20px;
-  font-weight: bold;
-  color: linearGradient(to right, #f3565b, #ffcc33);
+  color: #a7a8a7;
+  border-radius: 5px;
 }
 
 .DEPYL-Landingpage-scrolling-preview {
   position: relative;
-  width: 65%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -84,7 +48,7 @@
 }
 
 .next-project-btn {
-  background-color: #006d35;
+  background-color: rgba(4, 192, 95, 0.6862745098);
   color: white;
   padding: 1%;
   margin: 1%;
@@ -107,30 +71,6 @@
   text-decoration: none;
 }
 
-.previous-project-btn {
-  background-color: #004a6d;
-  color: white;
-  padding: 1%;
-  margin: 1%;
-  border-radius: 5px;
-  border: solid 1px #808080;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 1%;
-  padding: 1%;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: var(--bs-body-line-height);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.previous-project-btn:hover {
-  background-color: #0070cd;
-  color: white;
-  text-decoration: none;
-}
-
 .go-back-btn {
   background-color: #6d0000;
   color: white;
@@ -148,50 +88,17 @@
   width: -moz-fit-content;
   width: fit-content;
 }
-
-.go-back-btn:hover {
+.go-back-btn :hover {
   background-color: #cd0000;
   color: white;
   text-decoration: none;
 }
 
-.Green-Earth-preview {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  margin-top: 1%;
-  padding: 1%;
-}
-
-@media screen and (max-width: 650px) {
-  .Green-Earth-preview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 1%;
-    margin: 1%;
-  }
-}
 .macbook-wrapper {
   position: absolute;
   top: 25%;
   right: 1%;
   width: 50%;
-}
-
-.iphone-wrapper {
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-left: 5%;
 }
 
 @media screen and (max-width: 650px) {
@@ -213,13 +120,7 @@
   display: block;
 }
 
-.iphone-img {
-  width: auto;
-  height: 100%;
-  display: flex;
-}
-
-.gif-overlay {
+.depyl-gif-overlay {
   position: relative;
   display: block;
   top: 3%;
@@ -230,18 +131,18 @@
   pointer-events: none;
 }
 
-.gif-green-earth-overlay {
+/*.gif-green-earth-overlay {
   position: absolute;
   left: 5%;
   width: auto;
   height: auto;
   border-radius: 20px;
   pointer-events: none;
-  width: 355px;
-  height: 700px;
-  top: 10%;
+  width:355px; 
+  height:700px; 
+  top: 10%; 
 }
-
+*/
 .macbook-wrapper:hover .gif-overlay {
   opacity: 1;
   z-index: 4;

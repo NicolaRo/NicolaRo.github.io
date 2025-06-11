@@ -1,9 +1,9 @@
 .Project-description {
   background-color: #373c37;
-  width: 50%;
+  width: auto;
   height: auto;
   margin: 1%;
-  padding: 1%;
+  padding: 2%;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -14,9 +14,28 @@
   color: #a7a8a7;
 }
 
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 1%;
+  padding: 1%;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 650px) {
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .next-project-btn {
-  background-color: #006d35;
-  color: #a7a8a7;
+  background-color: rgba(4, 192, 95, 0.6862745098);
+  color: #f2f2f2;
   padding: 1%;
   margin: 1%;
   border-radius: 5px;
@@ -31,7 +50,6 @@
   width: -moz-fit-content;
   width: fit-content;
 }
-
 .next-project-btn:hover {
   background-color: #128c7e;
   color: #a7a8a7;
@@ -55,20 +73,19 @@
   width: -moz-fit-content;
   width: fit-content;
 }
-
-.previous-project-btn:hover {
+.previous-project-btn :hover {
   background-color: #0070cd;
-  color: white;
+  color: #a7a8a7;
   text-decoration: none;
 }
 
 .go-back-btn {
   background-color: #6d0000;
-  color: white;
+  color: #a7a8a7;
   padding: 1%;
   margin: 1%;
   border-radius: 5px;
-  border: solid 1px #808080;
+  border: solid 1px #868585;
   cursor: pointer;
   text-decoration: none;
   margin: 1%;
@@ -79,8 +96,30 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+.go-back-btn :hover {
+  background-color: #cd0000;
+  color: #a7a8a7;
+  text-decoration: none;
+}
 
-.go-back-btn:hover {
+.back-button {
+  background-color: #801023;
+  color: #a7a8a7;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 1%;
+  padding: 1%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: var(--bs-body-line-height);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.back-button :hover {
   background-color: #cd0000;
   color: white;
   text-decoration: none;
@@ -88,7 +127,7 @@
 
 .Green-Earth-preview {
   position: relative;
-  width: 100%;
+  width: 70%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -109,58 +148,27 @@
     margin: 1%;
   }
 }
-.macbook-wrapper {
-  position: absolute;
-  top: 25%;
-  right: 1%;
-  width: 50%;
-}
-
 .iphone-wrapper {
+  transform: scale 0.8;
   position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
   margin-left: 5%;
+  width: 50%;
 }
 
-@media screen and (max-width: 650px) {
-  .macbook-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top: 1%;
-    padding: 1%;
-  }
-}
-.macbook-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.iphone-img {
-  width: auto;
-  height: 100%;
-  display: flex;
-}
-
-.gif-overlay {
+/*.depyl-gif-overlay {
   position: relative;
   display: block;
-  top: 3%;
+  top: 3%; 
   left: 10%;
   width: 80%;
   height: auto;
   border-radius: 10px;
   pointer-events: none;
-}
-
+}*/
 .gif-green-earth-overlay {
   position: absolute;
   left: 5%;
@@ -173,116 +181,16 @@
   top: 10%;
 }
 
-.macbook-wrapper:hover .gif-overlay {
-  opacity: 1;
-  z-index: 4;
-  box-shadow: 0 0 10px #000;
-}
-
-@media screen and (max-width: 400px) {
-  .gif-overlay {
-    top: 17%;
-    left: 12%;
-    width: 76%;
+@media screen and (max-width: 650px) {
+  .iphone-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    padding: 1%;
   }
-}
-.back-button {
-  background-color: #6d0000;
-  color: white;
-  padding: 1%;
-  margin: 1%;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 1%;
-  padding: 1%;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: var(--bs-body-line-height);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.back-button:hover {
-  background-color: #cd0000;
-  color: white;
-  text-decoration: none;
-}
-
-.back-button:active {
-  background-color: #cd0000;
-  color: white;
-  text-decoration: none;
-}
-
-.footer {
-  background-color: #f2f2f2;
-  padding: 1%;
-  margin: 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: auto;
-  height: auto;
-  margin-top: auto;
-  color: #333;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer-btn:hover {
-  background-color: #373c37;
-  color: #a7a8a7;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-}
-
-.footer-links li {
-  margin: 0 10px;
-}
-
-.footer p {
-  font-size: 1rem;
-}
-
-.footer-btn {
-  color: #cd0000;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 1%;
-  padding: 1%;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: var(--bs-body-line-height);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.social-icon {
-  width: 45px;
-  height: 45px;
-  margin: 0;
-  padding: 1%;
-}
-
-.social-icon:hover {
-  background-color: #cd0000;
-  transition: all 0.3s ease;
-  margin: 0;
-  border-radius: 5px;
 }/*# sourceMappingURL=green-earth-project.css.map */
