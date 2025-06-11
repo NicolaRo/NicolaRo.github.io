@@ -27,7 +27,8 @@
   background-color: $section-color-background;
   width: auto;
   height: auto;
-  margin-top:10%;
+  margin-top:9%;
+  margin: 1%;
   padding: 1%;
   list-style: none;
   display: flex;
@@ -63,39 +64,31 @@
   top: 6%; 
 }
 @media screen and (max-width: 650px) {
-  .iphone-wrapper {
+  .gif-green-earth-overlay {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top: 1%;
+    width: 285px;
+    height: 600px;
+    margin-top: -200%;
+    margin-left:-1%;
     padding: 1%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .iphone-wrapper {
+    transform: scale (0.7);
+    margin-bottom: 5%;
   }
 }
 
 
-.buttons-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: auto;
-  margin: 1%;
-  padding:1%;
-  gap: 1rem;
-  flex-wrap: wrap;
-  @media screen and (max-width: 650px) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.next-project-btn {
-  background-color: $next-project-button-color;
+.previous-project-btn {
+  background-color: $previus-project-button-color;
   color: $color-lightgray;
   padding: 1%;
   margin: 1%;
@@ -109,39 +102,17 @@
   font-weight: 400;
   line-height: var(--bs-body-line-height);
   width:fit-content;
-  &:hover {
-    background-color: $color-green-hover;
-    color: $color-text;
-    text-decoration: none;
-  }
-}
-
-.previous-project-btn {
-  background-color: $previus-project-button-color;
-  color: $color-text;
-  padding: 1%;
-  margin: 1%;
-  border-radius: 5px;
-  border: solid 1px $color-border;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 1%;
-  padding: 1%;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: var(--bs-body-line-height);
-  width:fit-content;
 }
 
 .previous-project-btn:hover {
   background-color: #0070cd;
-  color: $color-text;
+  color: $color-lightgray;
   text-decoration: none;
 }
 
 .go-back-btn {
   background-color: #6d0000;
-  color: $color-text;
+  color: $color-lightgray;
   padding: 1%;
   margin: 1%;
   border-radius: 5px;
@@ -158,29 +129,6 @@
 
 .go-back-btn:hover {
   background-color: #cd0000;
-  color: $color-text;
-  text-decoration: none;
-}
-
-.back-button {
-  background-color: $color-primary;
-  color: $color-text;
-  padding: 1%;
-  margin: 1%;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 1%;
-  padding: 1%;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: var(--bs-body-line-height);
-  width:fit-content;
-}
-
-.back-button:hover {
-  background-color: #cd0000;
-  color: white;
+  color: $color-lightgray;
   text-decoration: none;
 }

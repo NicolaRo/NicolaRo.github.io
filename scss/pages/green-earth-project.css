@@ -25,7 +25,8 @@
   background-color: #373c37;
   width: auto;
   height: auto;
-  margin-top: 10%;
+  margin-top: 9%;
+  margin: 1%;
   padding: 1%;
   list-style: none;
   display: flex;
@@ -62,39 +63,28 @@
 }
 
 @media screen and (max-width: 650px) {
-  .iphone-wrapper {
+  .gif-green-earth-overlay {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top: 1%;
+    width: 285px;
+    height: 600px;
+    margin-top: -200%;
+    margin-left: -1%;
     padding: 1%;
+    margin-bottom: 10px;
   }
-}
-.buttons-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: auto;
-  margin: 1%;
-  padding: 1%;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 @media screen and (max-width: 650px) {
-  .buttons-container {
-    flex-direction: column;
-    align-items: center;
+  .iphone-wrapper {
+    transform: scale 0.7;
+    margin-bottom: 5%;
   }
 }
-
-.next-project-btn {
-  background-color: rgba(4, 192, 95, 0.6862745098);
+.previous-project-btn {
+  background-color: #004a6d;
   color: #f2f2f2;
   padding: 1%;
   margin: 1%;
@@ -110,39 +100,16 @@
   width: -moz-fit-content;
   width: fit-content;
 }
-.next-project-btn:hover {
-  background-color: #128c7e;
-  color: #a7a8a7;
-  text-decoration: none;
-}
-
-.previous-project-btn {
-  background-color: #004a6d;
-  color: #a7a8a7;
-  padding: 1%;
-  margin: 1%;
-  border-radius: 5px;
-  border: solid 1px #60000d;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 1%;
-  padding: 1%;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: var(--bs-body-line-height);
-  width: -moz-fit-content;
-  width: fit-content;
-}
 
 .previous-project-btn:hover {
   background-color: #0070cd;
-  color: #a7a8a7;
+  color: #f2f2f2;
   text-decoration: none;
 }
 
 .go-back-btn {
   background-color: #6d0000;
-  color: #a7a8a7;
+  color: #f2f2f2;
   padding: 1%;
   margin: 1%;
   border-radius: 5px;
@@ -160,30 +127,6 @@
 
 .go-back-btn:hover {
   background-color: #cd0000;
-  color: #a7a8a7;
-  text-decoration: none;
-}
-
-.back-button {
-  background-color: #801023;
-  color: #a7a8a7;
-  padding: 1%;
-  margin: 1%;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 1%;
-  padding: 1%;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: var(--bs-body-line-height);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.back-button:hover {
-  background-color: #cd0000;
-  color: white;
+  color: #f2f2f2;
   text-decoration: none;
 }/*# sourceMappingURL=green-earth-project.css.map */
