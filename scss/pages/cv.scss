@@ -37,10 +37,14 @@
 
 .page-header {
   background-color: rgba(169, 21, 21, 0.519);
-  background-image: url('/img/CV-img/code-background-copia.png') !important;
+  background-image: url('/img/CV-img/code-background.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   backdrop-filter: blur(5px), brightness(0.8), contrast(1.2);
   padding:1%;
   margin: 1%;
+  border-radius: 5px;
 }
 
 .wrap-master-gif {
@@ -138,6 +142,9 @@
 .start2Impact-container {
   width: fit-content;
   height: auto;
+  font-size: larger;
+  text-align: center;
+  margin: 5%;
 }
 .btn-mastetr {
   width: fit-content;
